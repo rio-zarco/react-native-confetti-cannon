@@ -32,7 +32,7 @@ class Confetti extends React.PureComponent<Props> {
     const { containerTransform, transform, opacity, color } = this.props;
     const { width, height, isRounded } = this;
     const containerStyle = { transform: containerTransform };
-    const style = { width, height, backgroundColor: color, transform, opacity};
+    const style = { width, height, backgroundColor: color, transform, opacity, zIndex: 10};
 
     return (
       <Animated.View
